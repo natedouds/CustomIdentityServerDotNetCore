@@ -1,5 +1,5 @@
---temp-output:C:\Users\Nathan\Documents\Visual Studio 2015\Projects\CustomIdentityServerDotNetCore\ProtectedWebApi\ProtectedApi\obj\Debug\netcoreapp1.0\
---out:C:\Users\Nathan\Documents\Visual Studio 2015\Projects\CustomIdentityServerDotNetCore\ProtectedWebApi\ProtectedApi\bin\Debug\netcoreapp1.0\ProtectedApi.dll
+--temp-output:C:\Users\Nathan\Documents\Code\Visual Studio Projects\CustomIdentityServerDotNetCore\ProtectedWebApi\ProtectedApi\obj\Debug\netcoreapp1.0\
+--out:C:\Users\Nathan\Documents\Code\Visual Studio Projects\CustomIdentityServerDotNetCore\ProtectedWebApi\ProtectedApi\bin\Debug\netcoreapp1.0\ProtectedApi.dll
 --define:DEBUG
 --define:TRACE
 --define:NETCOREAPP1_0
@@ -182,7 +182,7 @@
 --reference:C:\Users\Nathan\.nuget\packages\System.Threading.Timer\4.0.1\ref\netstandard1.2\System.Threading.Timer.dll
 --reference:C:\Users\Nathan\.nuget\packages\System.Xml.ReaderWriter\4.0.11\ref\netstandard1.3\System.Xml.ReaderWriter.dll
 --reference:C:\Users\Nathan\.nuget\packages\System.Xml.XDocument\4.0.11\ref\netstandard1.3\System.Xml.XDocument.dll
---resource:"C:\Users\Nathan\Documents\Visual Studio 2015\Projects\CustomIdentityServerDotNetCore\ProtectedWebApi\ProtectedApi\obj\Debug\netcoreapp1.0\ProtectedApidotnet-compile.deps.json",ProtectedApi.deps.json
-C:\Users\Nathan\Documents\Visual Studio 2015\Projects\CustomIdentityServerDotNetCore\ProtectedWebApi\ProtectedApi\Program.cs
-C:\Users\Nathan\Documents\Visual Studio 2015\Projects\CustomIdentityServerDotNetCore\ProtectedWebApi\ProtectedApi\Startup.cs
-C:\Users\Nathan\Documents\Visual Studio 2015\Projects\CustomIdentityServerDotNetCore\ProtectedWebApi\ProtectedApi\Controllers\IdentityController.cs
+--resource:"C:\Users\Nathan\Documents\Code\Visual Studio Projects\CustomIdentityServerDotNetCore\ProtectedWebApi\ProtectedApi\obj\Debug\netcoreapp1.0\ProtectedApidotnet-compile.deps.json",ProtectedApi.deps.json
+C:\Users\Nathan\Documents\Code\Visual Studio Projects\CustomIdentityServerDotNetCore\ProtectedWebApi\ProtectedApi\Program.cs
+C:\Users\Nathan\Documents\Code\Visual Studio Projects\CustomIdentityServerDotNetCore\ProtectedWebApi\ProtectedApi\Startup.cs
+C:\Users\Nathan\Documents\Code\Visual Studio Projects\CustomIdentityServerDotNetCore\ProtectedWebApi\ProtectedApi\Controllers\IdentityController.cs

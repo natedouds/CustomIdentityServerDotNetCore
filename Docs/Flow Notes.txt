@@ -1,0 +1,19 @@
+OAuth and OpenID Connect flows
+
+1) Client Credentials
+ - server to server
+
+2) Implicit
+ - Client initiates the flow by directing the resource owners, user agents (browser), to the authorization endpoint. The client includes 'client id', 'requested scope', 'local state', and a 'redirection uri' to which the auth server will send the agent back once authorization is granted or denied.
+ - The auth server authenticates the resource owner via the user agent, and establishes whether the resource owner grants or denies the client's access request
+ - Assuming the resource owner grants access, the auth server redirects the user agent back to the client using the redirection uri from earlier
+ - That URI includes the access token in the uri fragment
+ - The user agent follows the redirection instructions by making a request to the hosted client resource.
+ - The user agent retains the fragment information locally
+ - The web hosted client resource returns a web page (it must also be capable of extracting the token contained in the fragment)
+   - user agent typically executes a script on the page, which extracts the token -> it then passes it back to the client
+
+3) Hybrid
+ - OpenID Connect flow
+ - identity token is transmitted via the browser channel, so the client can validate it before doing any more work.
+ - if validation is successful, the client opens a back-channel to the token service to retrieve the access token

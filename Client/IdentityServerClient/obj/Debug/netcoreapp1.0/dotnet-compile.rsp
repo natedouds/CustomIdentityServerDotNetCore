@@ -1,5 +1,5 @@
---temp-output:C:\Users\Nathan\Documents\Visual Studio 2015\Projects\CustomIdentityServerDotNetCore\Client\IdentityServerClient\obj\Debug\netcoreapp1.0\
---out:C:\Users\Nathan\Documents\Visual Studio 2015\Projects\CustomIdentityServerDotNetCore\Client\IdentityServerClient\bin\Debug\netcoreapp1.0\IdentityServerClient.dll
+--temp-output:C:\Users\Nathan\Documents\Code\Visual Studio Projects\CustomIdentityServerDotNetCore\Client\IdentityServerClient\obj\Debug\netcoreapp1.0\
+--out:C:\Users\Nathan\Documents\Code\Visual Studio Projects\CustomIdentityServerDotNetCore\Client\IdentityServerClient\bin\Debug\netcoreapp1.0\IdentityServerClient.dll
 --define:DEBUG
 --define:TRACE
 --define:NETCOREAPP1_0
@@ -90,5 +90,5 @@
 --reference:C:\Users\Nathan\.nuget\packages\System.Threading.Timer\4.0.1\ref\netstandard1.2\System.Threading.Timer.dll
 --reference:C:\Users\Nathan\.nuget\packages\System.Xml.ReaderWriter\4.0.11\ref\netstandard1.3\System.Xml.ReaderWriter.dll
 --reference:C:\Users\Nathan\.nuget\packages\System.Xml.XDocument\4.0.11\ref\netstandard1.3\System.Xml.XDocument.dll
-C:\Users\Nathan\Documents\Visual Studio 2015\Projects\CustomIdentityServerDotNetCore\Client\IdentityServerClient\Program.cs
-C:\Users\Nathan\Documents\Visual Studio 2015\Projects\CustomIdentityServerDotNetCore\Client\IdentityServerClient\Properties\AssemblyInfo.cs
+C:\Users\Nathan\Documents\Code\Visual Studio Projects\CustomIdentityServerDotNetCore\Client\IdentityServerClient\Program.cs
+C:\Users\Nathan\Documents\Code\Visual Studio Projects\CustomIdentityServerDotNetCore\Client\IdentityServerClient\Properties\AssemblyInfo.cs

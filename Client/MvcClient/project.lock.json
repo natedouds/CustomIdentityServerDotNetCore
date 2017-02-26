@@ -3,6 +3,22 @@
   "version": 2,
   "targets": {
     ".NETCoreApp,Version=v1.0": {
+      "IdentityModel/2.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "9.0.1",
+          "System.Net.Http": "4.1.0",
+          "System.Security.Claims": "4.0.1",
+          "System.Security.Cryptography.Algorithms": "4.2.0",
+          "System.Security.Cryptography.X509Certificates": "4.1.0"
+        },
+        "compile": {
+          "lib/netstandard1.3/IdentityModel.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.3/IdentityModel.dll": {}
+        }
+      },
       "Libuv/1.9.0": {
         "type": "package",
         "dependencies": {
@@ -3915,6 +3931,17 @@
     }
   },
   "libraries": {
+    "IdentityModel/2.0.0": {
+      "sha512": "c5+zB+ADJ7QB2LC4tE5p4ESMHfR8HCBOD/LOjkNUiEh4AtbBgcZHYMKbBw/+rS5QyXNmMT0c+IMF1xb49XcYlQ==",
+      "type": "package",
+      "path": "IdentityModel/2.0.0",
+      "files": [
+        "IdentityModel.2.0.0.nupkg.sha512",
+        "IdentityModel.nuspec",
+        "lib/net45/IdentityModel.dll",
+        "lib/netstandard1.3/IdentityModel.dll"
+      ]
+    },
     "Libuv/1.9.0": {
       "sha512": "9Q7AaqtQhS8JDSIvRBt6ODSLWDBI4c8YxNxyCQemWebBFUtBbc6M5Vi5Gz1ZyIUlTW3rZK9bIr5gnVyv0z7a2Q==",
       "type": "package",
@@ -10076,6 +10103,7 @@
   },
   "projectFileDependencyGroups": {
     "": [
+      "IdentityModel >= 2.0.0",
       "Microsoft.AspNetCore.Authentication.Cookies >= 1.0.*",
       "Microsoft.AspNetCore.Authentication.OpenIdConnect >= 1.0.*",
       "Microsoft.AspNetCore.Diagnostics >= 1.0.*",

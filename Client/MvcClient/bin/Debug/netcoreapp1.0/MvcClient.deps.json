@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v1.0",
-    "signature": "f63b6baedea884ada6b5f52eb2e6e4945c69dc34"
+    "signature": "31a4022236f3bb671057c13974ec57c93ef3e6a9"
   },
   "compilationOptions": {
     "defines": [
@@ -29,13 +29,29 @@
           "Microsoft.Extensions.Logging.Debug": "1.0.1",
           "Microsoft.Extensions.Options.ConfigurationExtensions": "1.0.1",
           "Microsoft.AspNetCore.Authentication.Cookies": "1.0.1",
-          "Microsoft.AspNetCore.Authentication.OpenIdConnect": "1.0.1"
+          "Microsoft.AspNetCore.Authentication.OpenIdConnect": "1.0.1",
+          "IdentityModel": "2.0.0"
         },
         "runtime": {
           "MvcClient.dll": {}
         },
         "compile": {
           "MvcClient.dll": {}
+        }
+      },
+      "IdentityModel/2.0.0": {
+        "dependencies": {
+          "Newtonsoft.Json": "9.0.1",
+          "System.Net.Http": "4.1.1",
+          "System.Security.Claims": "4.0.1",
+          "System.Security.Cryptography.Algorithms": "4.2.0",
+          "System.Security.Cryptography.X509Certificates": "4.1.0"
+        },
+        "runtime": {
+          "lib/netstandard1.3/IdentityModel.dll": {}
+        },
+        "compile": {
+          "lib/netstandard1.3/IdentityModel.dll": {}
         }
       },
       "Microsoft.AspNetCore.Antiforgery/1.0.2": {
@@ -3320,6 +3336,11 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "IdentityModel/2.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-c5+zB+ADJ7QB2LC4tE5p4ESMHfR8HCBOD/LOjkNUiEh4AtbBgcZHYMKbBw/+rS5QyXNmMT0c+IMF1xb49XcYlQ=="
     },
     "Microsoft.AspNetCore.Antiforgery/1.0.2": {
       "type": "package",

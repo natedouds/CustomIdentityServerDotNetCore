@@ -7,8 +7,8 @@
 -debug:full
 -nostdlib
 -nologo
-"C:\Users\Nathan\Documents\Visual Studio 2015\Projects\CustomIdentityServerDotNetCore\Client\IdentityServerClient\obj\Debug\netcoreapp1.0\dotnet-compile.assemblyinfo.cs"
--out:"C:\Users\Nathan\Documents\Visual Studio 2015\Projects\CustomIdentityServerDotNetCore\Client\IdentityServerClient\bin\Debug\netcoreapp1.0\IdentityServerClient.dll"
+"C:\Users\Nathan\Documents\Code\Visual Studio Projects\CustomIdentityServerDotNetCore\Client\IdentityServerClient\obj\Debug\netcoreapp1.0\dotnet-compile.assemblyinfo.cs"
+-out:"C:\Users\Nathan\Documents\Code\Visual Studio Projects\CustomIdentityServerDotNetCore\Client\IdentityServerClient\bin\Debug\netcoreapp1.0\IdentityServerClient.dll"
 -r:"C:\Users\Nathan\.nuget\packages\IdentityModel\2.0.0\lib\netstandard1.3\IdentityModel.dll"
 -r:"C:\Users\Nathan\.nuget\packages\Microsoft.CSharp\4.0.1\ref\netstandard1.0\Microsoft.CSharp.dll"
 -r:"C:\Users\Nathan\.nuget\packages\Microsoft.VisualBasic\10.0.1\ref\netstandard1.1\Microsoft.VisualBasic.dll"
@@ -86,5 +86,5 @@
 -r:"C:\Users\Nathan\.nuget\packages\System.Threading.Timer\4.0.1\ref\netstandard1.2\System.Threading.Timer.dll"
 -r:"C:\Users\Nathan\.nuget\packages\System.Xml.ReaderWriter\4.0.11\ref\netstandard1.3\System.Xml.ReaderWriter.dll"
 -r:"C:\Users\Nathan\.nuget\packages\System.Xml.XDocument\4.0.11\ref\netstandard1.3\System.Xml.XDocument.dll"
-"C:\Users\Nathan\Documents\Visual Studio 2015\Projects\CustomIdentityServerDotNetCore\Client\IdentityServerClient\Program.cs"
-"C:\Users\Nathan\Documents\Visual Studio 2015\Projects\CustomIdentityServerDotNetCore\Client\IdentityServerClient\Properties\AssemblyInfo.cs"
+"C:\Users\Nathan\Documents\Code\Visual Studio Projects\CustomIdentityServerDotNetCore\Client\IdentityServerClient\Program.cs"
+"C:\Users\Nathan\Documents\Code\Visual Studio Projects\CustomIdentityServerDotNetCore\Client\IdentityServerClient\Properties\AssemblyInfo.cs"
