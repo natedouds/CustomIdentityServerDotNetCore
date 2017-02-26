@@ -87,7 +87,7 @@ namespace QuickstartIdentityServer
                     AllowAccessTokensViaBrowser = true,
                     RedirectUris = {"http://localhost:5003/callback.html"},
                     PostLogoutRedirectUris = {"http://localhost:5003/index.html"},
-                    AllowedCorsOrigins = {"http://localhost:5003"},
+                    AllowedCorsOrigins = {"http://localhost:5003", "http://127.0.0.1:8080"},
                     AllowedScopes =
                     {
                         IdentityServerConstants.StandardScopes.OpenId,

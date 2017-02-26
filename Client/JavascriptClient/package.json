@@ -3,6 +3,7 @@
   "name": "asp.net",
   "private": true,
   "devDependencies": {
+    "http-server": "^0.9.0",
     "oidc-client": "1.2.2"
   }
 }

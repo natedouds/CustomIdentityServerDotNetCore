@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "QuickstartIdentityServer", "QuickstartIdentityServer\QuickstartIdentityServer.xproj", "{74894537-E514-4087-B6E1-B9D77A2ED34C}"
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "QuickstartIdentityServer-InMemoryUsers", "QuickstartIdentityServer\QuickstartIdentityServer-InMemoryUsers.xproj", "{74894537-E514-4087-B6E1-B9D77A2ED34C}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "IdentityServerWithAspNetIdentityDb", "IdentityServerWithAspNetIdentityDb\IdentityServerWithAspNetIdentityDb.xproj", "{D5E3F6BE-D52E-423E-85AD-E35ACD0D0928}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{74894537-E514-4087-B6E1-B9D77A2ED34C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{74894537-E514-4087-B6E1-B9D77A2ED34C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{74894537-E514-4087-B6E1-B9D77A2ED34C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5E3F6BE-D52E-423E-85AD-E35ACD0D0928}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5E3F6BE-D52E-423E-85AD-E35ACD0D0928}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5E3F6BE-D52E-423E-85AD-E35ACD0D0928}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5E3F6BE-D52E-423E-85AD-E35ACD0D0928}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
