@@ -27,9 +27,22 @@ namespace ProtectedApi
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            // Add framework services.
-            services.AddMvc();
+            services.AddCors(options =>
+            {
+                // this defines a CORS policy called "default"
+                options.AddPolicy("default", policy =>
+                {
+                    policy.WithOrigins("http://localhost:5003")
+                        .AllowAnyHeader()
+                        .AllowAnyMethod();
+                });
+            });
+
+            services.AddMvcCore()
+                .AddAuthorization()
+                .AddJsonFormatters();
         }
+
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
@@ -37,14 +50,19 @@ namespace ProtectedApi
             loggerFactory.AddConsole(Configuration.GetSection("Logging"));
             loggerFactory.AddDebug();
 
+            // this uses the policy called "default"
+            app.UseCors("default");
+
             app.UseIdentityServerAuthentication(new IdentityServerAuthenticationOptions
             {
                 Authority = "http://localhost:5000",
-                RequireHttpsMetadata = false,
-                ApiName = "api1"
+                AllowedScopes = { "api1" },
+
+                RequireHttpsMetadata = false
             });
 
             app.UseMvc();
         }
+
     }
 }

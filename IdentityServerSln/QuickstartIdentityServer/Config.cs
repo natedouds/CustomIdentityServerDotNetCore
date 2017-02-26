@@ -39,12 +39,11 @@ namespace QuickstartIdentityServer
                 {
                     ClientId = "client",
                     AllowedGrantTypes = GrantTypes.ClientCredentials,
-
                     ClientSecrets =
                     {
                         new Secret("secret".Sha256())
                     },
-                    AllowedScopes = { "api1" }
+                    AllowedScopes = {"api1"}
                 },
 
                 // resource owner password grant client
@@ -52,12 +51,11 @@ namespace QuickstartIdentityServer
                 {
                     ClientId = "ro.client",
                     AllowedGrantTypes = GrantTypes.ResourceOwnerPassword,
-
                     ClientSecrets =
                     {
                         new Secret("secret".Sha256())
                     },
-                    AllowedScopes = { "api1" }
+                    AllowedScopes = {"api1"}
                 },
 
                 // OpenID Connect hybrid flow and client credentials client (MVC)
@@ -66,22 +64,36 @@ namespace QuickstartIdentityServer
                     ClientId = "mvc",
                     ClientName = "MVC Client",
                     AllowedGrantTypes = GrantTypes.HybridAndClientCredentials,
-
-                    ClientSecrets = 
+                    ClientSecrets =
                     {
                         new Secret("secret".Sha256())
                     },
-
-                    RedirectUris = { "http://localhost:5002/signin-oidc" },
-                    PostLogoutRedirectUris = { "http://localhost:5002" },
-
-                    AllowedScopes = 
+                    RedirectUris = {"http://localhost:5002/signin-oidc"},
+                    PostLogoutRedirectUris = {"http://localhost:5002"},
+                    AllowedScopes =
                     {
                         IdentityServerConstants.StandardScopes.OpenId,
                         IdentityServerConstants.StandardScopes.Profile,
                         "api1"
                     },
                     AllowOfflineAccess = true
+                },
+                // JavaScript Client
+                new Client
+                {
+                    ClientId = "js",
+                    ClientName = "JavaScript Client",
+                    AllowedGrantTypes = GrantTypes.Implicit,
+                    AllowAccessTokensViaBrowser = true,
+                    RedirectUris = {"http://localhost:5003/callback.html"},
+                    PostLogoutRedirectUris = {"http://localhost:5003/index.html"},
+                    AllowedCorsOrigins = {"http://localhost:5003"},
+                    AllowedScopes =
+                    {
+                        IdentityServerConstants.StandardScopes.OpenId,
+                        IdentityServerConstants.StandardScopes.Profile,
+                        "api1"
+                    }
                 }
             };
         }
@@ -95,7 +107,6 @@ namespace QuickstartIdentityServer
                     SubjectId = "1",
                     Username = "alice",
                     Password = "password",
-
                     Claims = new List<Claim>
                     {
                         new Claim("name", "Alice"),
@@ -107,7 +118,6 @@ namespace QuickstartIdentityServer
                     SubjectId = "2",
                     Username = "bob",
                     Password = "password",
-
                     Claims = new List<Claim>
                     {
                         new Claim("name", "Bob"),
